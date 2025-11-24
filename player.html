@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos Ecotube</title>
+    <link rel="stylesheet" href="assets/CSS/player.css">
+</head>
+
+<body>
+    <!--CABEÇALHO-->
+    <header class="header">
+        <nav>
+            <div class="navbar_container">
+                <!--LOGO-->
+                <div class="navbar_logo">
+                    <img src="assets/img/logo.png" alt="Logo da Ecotube">
+                </div>
+
+                <!--BARRA DE PESQUISA-->
+                <div class="search-box">
+
+                    <button class="search" aria-label="botão pesquisar">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                    <input type="text" placeholder="Pesquisar...">
+
+                </div>
+
+                <!--BOTÕES-->
+                <div class="navbar_buttons">
+
+                    <div class="navbar_button">
+                        <button>
+                            <a href="comment.html">
+                                <ion-icon name="notifications-outline"></ion-icon>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="navbar_button">
+                        <button>
+                            <ion-icon name="globe-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="navbar_button">
+                        <button>
+                            <a href="login.html">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div class="navbar_links">
+                <a href="index.html">Início</a>
+                <a href="#">Vídeos</a>
+                <a href="ecoclips.html">EcoClips</a>
+                <a href="sobre_nos.html">Sobre nós</a>
+            </div>
+        </nav>
+        <!--IONICONS-->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </header>
+    <!-- Player do video -->
+     
+    <section class="player_section container" >
+        <div class="player-video">
+            <video controls
+             width="100%" height="100%">
+                <source src="assets/videos/videoplayback.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+
+            <div class="video-details">
+                <h2 class="video_title">O QUE É EDUCAÇÃO AMBIENTAL?</h2>
+                <p class="video_views">1.234 visualizações • Publicado em 5 de junho de 2023</p>
+            </div>
+
+            <div class="video-info">
+                <div class="video-container">
+                    <a href="canal.html"><img src="assets/img/prof.jpg" alt="professor" class="video_channel_logo"></a>     
+                    <a href="canal.html" class="canal_name">Prof. Augusto</a>
+                    <p class="video_subscribers">1,5 mil seguidores</p>
+                    <button class="subscribe_button">Seguir</button>
+                </div>
+                <div class="video-action">
+                    <button class="like_button">
+                        <ion-icon name="happy-outline"></ion-icon> 99
+                    </button>
+                    <button class="dislike_button">
+                        <ion-icon name="sad-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Cometarios -->
+            <section class="comentarios container">
+                <h2 class="titulo-comentarios">💬 Comentários</h2>
+            
+                <div class="comentario">
+                    <div class="usuario">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="Usuário" class="foto-usuario">
+                        <p class="nome-usuario">@gabriel</p>
+                    </div>
+                    <p class="texto-comentario">
+                        Ai você me quebra! Que vídeo incrível, muito obrigado por compartilhar esse conteúdo tão importante sobre
+                    </p>
+                </div>
+            
+                <div class="comentario">
+                    <div class="usuario">
+                        <img src="https://i.pravatar.cc/40?img=2" alt="Usuário" class="foto-usuario">
+                        <p class="nome-usuario">@user637</p>
+                    </div>
+                    <p class="texto-comentario">
+                        Que vídeo inspirador! É maravilhoso ver conteúdos assim que nos fazem refletir sobre a importância
+                        de cuidar do nosso planeta. A forma como vocês abordaram os problemas ambientais com informação clara e
+                        imagens impactantes foi simplesmente incrível. Parabéns pela produção e pela mensagem tão necessária!
+                    </p>
+                </div>
+            
+                <div class="comentario">
+                    <div class="usuario">
+                        <img src="assets/img/user03.jpg" alt="Usuário" class="foto-usuario">
+                        <p class="nome-usuario">@prof.aumir</p>
+                    </div>
+                    <p class="texto-comentario">
+                        Sou professor e o vídeo foi muito útil. Vai me ajudar bastante em aula. Obrigado pelo conteúdo!
+                    </p>
+                </div>
+            
+                <div class="btn-ver-mais">
+                    <a href="comment.html">
+                        <button class="btn-ver-mais">
+                            Ver mais
+                        </button>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        
+        <aside class="sidebar">
+            <div class="suggestion">
+                <img class="thumb" src="assets/img/img24.jpg" alt="thumb">
+                <div class="titulo"><p>Dia mundial do meio ambiente. VLOG</p></div>
+            </div>
+            <div class="suggestion">
+                <img class="thumb" src="assets/img/img1.jpg" alt="thumb">
+                <div class="titulo"><p>Pra onde vai o seu lixo?</p></div>
+            </div>
+            <div class="suggestion">
+                <img class="thumb" src="assets/img/img2.jpg" alt="thumb">
+                <div class="titulo"><p>Fui em uma palestra sobre meio ambiente e olha como foi.</p></div>
+            </div>
+            <div class="suggestion">
+                <img class="thumb" src="assets/img/img3.jpg" alt="thumb">
+                <div class="titulo"><p>Lixões e seus poblemas.</p></div>
+            </div>
+            <div class="suggestion">
+                <img class="thumb" src="assets/img/img5.jpg" alt="thumb">
+                <div class="titulo"><p>Poblemas do Aquecimento Global.</p></div>
+            </div>
+            <div class="suggestion">
+                <img class="thumb" src="assets/img/img6.jpg" alt="thumb">
+                <div class="titulo"><p>O que é Aquecimento Global.</p></div>
+            </div>
+        </aside>
+    </section>
+
+</body>
+</html>

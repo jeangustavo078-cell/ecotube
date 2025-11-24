@@ -1,0 +1,474 @@
+:root {
+  --primary-color: #004B23;
+  --second-color: #EDFFDD;
+  --third-color: #63AD22;
+  --text-dark: #071408;
+  --text-light: #3a6b38;
+  --extre-light: #f8fafc;
+  --white: #ffffff;
+  --gradient: linear-gradient(to right bottom, #ffd43b, #ff9900);
+  --background: #EDFFDD;
+  --positive: #0d8ae5;
+  --negative: #ff6b6b;
+
+  --ff: 'montserrat', sans-serif;
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background);
+}
+
+.navbar_container {
+    width: 0 auto;
+    padding: 10px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_logo img {
+    width: 5rem;
+    margin-left: 2rem;
+    margin-right: -2rem;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    color: var(--text-light);
+    width: 500px;
+}
+
+.search {
+    border: none;
+    background: var(--white);
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0.2rem;
+}
+
+.search ion-icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.navbar_links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    margin: 1rem 2rem;
+}
+
+.navbar_links a {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.2s ease;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 0.4rem 0.7rem;
+}
+
+.navbar_links a:hover {
+    color: var(--white);
+    background-color: #004b23b7;
+    border-radius: 15px;
+    padding: 0.4rem 0.7rem;
+}
+
+.navbar_button a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar_buttons {
+    display: flex;
+    gap: 1.4rem;
+    margin-right: 2rem;
+}
+
+.navbar_button button {
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.navbar_button ion-icon {
+    border-radius: 50%;
+    padding: 0.2rem;
+    transition: 0.3s;
+}
+
+.navbar_button ion-icon:hover {
+    color: var(--third-color);
+}
+
+.container {
+  width: 100%;
+}
+
+.player-video {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  margin-top: 30px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+}
+
+.player-video video {
+  width: 100%;
+  background-color: var(--extre-light);
+}
+
+.player_section {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.player-video h2 {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.video_channel_logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.canal_name{
+  font-size: 1rem;
+  color: var(--text-light);
+  margin: 5px 0;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.video_views,
+.video_subscribers {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  margin: 2px 0;
+  display: inline-block;
+  
+}
+
+.video-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 1rem;
+}
+
+.subscribe_button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 26.84px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 20px 10px 10px 10px;
+  transition: all 0.3s ease;
+}
+
+.subscribe_button:hover {
+  background-color: var(--positive);
+}
+
+.like_button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  gap: 8px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 26.84px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.like_button:hover {
+  background-color: var(--positive);
+}
+
+.dislike_button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  gap: 8px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 26.84px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 37px;
+  transition: all 0.3s ease;
+}
+
+.dislike_button:hover {
+    background-color: var(--negative);
+}
+
+.like_button ion-icon {
+  margin-right: 6px;
+  font-size: 1.2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.player-video .subscribe_button,
+.player-video .like_button {
+  white-space: nowrap;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 30px;
+}
+
+.suggestion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: transparent;
+  overflow: visible;
+}
+
+.suggestion .thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.suggestion .titulo {
+  padding: 4px 0;
+}
+
+.suggestion .titulo p {
+  margin: 0;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.comentarios {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  margin: 20px auto 0;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.comentarios h2 {
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.comentario {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.foto-usuario {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.nome-usuario {
+  font-weight: 600;
+  color: #004b23;
+}
+
+.texto-comentario {
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.btn-ver-mais {
+  color: var(--white);
+  width: 200px;
+  display: flex;
+  margin: 20px auto;
+  background-color: #38b000;
+  border: none;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-ver-mais a{
+  text-decoration: none;
+}
+
+.btn-ver-mais button:hover {
+  transform: scale(1);
+}
+
+.btn-ver-mais:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 994px) {
+  #toggle_menu{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .sidebar {
+    flex: 0 0 200px;
+  }
+
+  .suggestion .titulo p {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .sidebar {
+    display: none;
+  }
+
+  .search-box input{
+    width: 200px;
+  }
+
+  .navbar_links, .navbar_buttons {
+    display: none;
+  }
+
+  #toggle_menu{
+    display: block;
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  .like_button, .dislike_button, .subscribe_button {
+    font-size: 0.7rem;
+    padding: 6px 10px;
+  }
+
+  .dislike_button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .video-details h2 {
+    font-size: 1.2rem;
+  }
+
+  .video-info {
+    align-items: baseline;
+  }
+
+  .video-container p, .video-container a{
+    font-size: 0.8rem;
+  }
+
+  .comentarios {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  .comentario {
+    padding: 10px 15px;
+  }
+
+  .btn-ver-mais {
+    width: 150px;
+    font-size: 0.9rem;
+  }
+
+  .texto-comentario {
+    font-size: 12px;
+  }
+
+  .foto-usuario {
+    width: 30px;
+    height: 30px;
+  }
+}

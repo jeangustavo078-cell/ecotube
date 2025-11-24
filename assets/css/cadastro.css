@@ -1,0 +1,291 @@
+:root {
+  --primary-color: #004B23;
+  --second-color: #EDFFDD;
+  --third-color: #63AD22;
+  --text-dark: #071408;
+  --text-light: #3a6b38;
+  --extre-light: #f8fafc;
+  --white: #ffffff;
+  --gradient: linear-gradient(to right bottom, #ffd43b, #ff9900);
+  --background: #EDFFDD;
+  --ff: 'montserrat', sans-serif;
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background);
+}
+
+.navbar_container {
+  width: 0 auto;
+  padding: 10px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_logo img {
+  width: 5rem;
+  margin-left: 2rem;
+  margin-right: -2rem;
+}
+
+
+.navbar_links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  margin: 1rem 2rem;
+}
+
+.navbar_links a {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 0.4rem 0.7rem;
+}
+
+.navbar_links a:hover {
+  color: var(--white);
+  background-color: #004b23b7;
+  border-radius: 15px;
+  padding: 0.4rem 0.7rem;
+}
+
+.navbar_buttons {
+  display: flex;
+  gap: 1.4rem;
+  margin-right: 2rem;
+}
+
+.navbar_button button {
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.navbar_button ion-icon {
+  border-radius: 50%;
+  padding: 0.2rem;
+  transition: 0.3s;
+}
+
+.navbar_button ion-icon:hover {
+  color: var(--third-color);
+}
+
+.navbar_button a{
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* Main container */
+main {
+  display: flex;
+  height: 100%;
+}
+
+/* Left Section */
+.left-section {
+  background-color: var(--second-color);
+  width: 40%;
+  display: flex;
+  flex-direction: column;  /* Changed to column layout */
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;  /* Added padding */
+}
+
+.left-content {
+  text-align: center;
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  width: 180px;
+  height: 160px;
+  margin: 0;
+}
+
+.texto {
+  width: 350px;
+  height: 350px;
+  margin: 0;
+}
+
+.contato {
+  width: 160px;
+  height: auto;
+  margin: 0;
+}
+
+.frase {
+  margin: 20px 0;
+  font-size: 20px;
+  color: var(--texto-claro);
+}
+
+.social {
+  margin-bottom: 20px;
+  color: var(--texto-escuro);
+}
+
+.checkbox-area {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.checkbox-area a {
+  color: var(--texto-escuro);
+  text-decoration: underline;
+}
+
+/* Right Section */
+.right-section {
+  background-color: var(--primary-color);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.formulario {
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.formulario h2 {
+  margin-bottom: 15px;
+}
+
+.input-box {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.data-nascimento input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.botao {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #c8ffb5;
+}
+
+/* Em telas grandes, esconde o ícone hambúrguer */
+@media (min-width: 1311px) {
+  #toggle_menu {
+    display: none;
+  }
+}
+
+/* RESPONSIVIDADE tablet */
+@media screen and (max-width: 1310px) {
+
+  .navbar_links, .navbar_buttons {
+    display: none;
+  }
+
+  #toggle_menu{
+    display: block;
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+
+  .navbar_logo img{
+    width: 4rem;
+    margin-left: 1rem;
+    margin-right: -1rem;
+    margin-top: 1rem;
+  }
+
+  .navbar_container{
+    padding: 8px;
+  }
+
+  
+  main {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    height: auto;
+  }
+
+  .formulario {
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .data-nascimento{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .data-nascimento input{
+    width: 32%;
+    margin-top: 1rem;
+  }
+
+  .cont {
+    display: none;
+  }
+}
+

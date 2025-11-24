@@ -1,0 +1,299 @@
+:root {
+    --primary-color: #004B23;
+    --second-color: #EDFFDD;
+    --third-color: #63AD22;
+    --text-dark: #071408;
+    --text-light: #3a6b38;
+    --extre-light: #f8fafc;
+    --white: #ffffff;
+    --gradient: linear-gradient(to right bottom, #ffd43b, #ff9900);
+    --background: #EDFFDD;
+    --ff: 'montserrat', sans-serif;
+    font-size: 100%;
+    --lateral-width: 400px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white);
+}
+
+.navbar_container {
+    width: 0 auto;
+    padding: 10px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar_logo img {
+    width: 5rem;
+    margin-left: 2rem;
+    margin-right: -2rem;
+}
+
+.navbar_links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    margin: 1rem 2rem;
+}
+
+.navbar_links a {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    padding: 0.4rem 0.7rem;
+}
+
+.navbar_links a:hover {
+    color: var(--white);
+    background-color: #004b23b7;
+    border-radius: 15px;
+    padding: 0.4rem 0.7rem;
+}
+
+.navbar_buttons {
+    display: flex;
+    gap: 1.4rem;
+    margin-right: 2rem;
+}
+
+.navbar_button button {
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.navbar_button a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar_button ion-icon {
+    border-radius: 50%;
+    padding: 0.2rem;
+    transition: 0.3s;
+}
+
+.navbar_button ion-icon:hover {
+    color: var(--third-color);
+}
+
+.login-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+}
+
+.lateral {
+    background-color: var(--second-color);
+    position: absolute;
+    left: 0;
+    top: -59px;
+    width: 450px;
+    height: 85vh;
+    padding: 0.5rem;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container {
+    width: 500px;
+    margin-left: calc(var(--lateral-width) + 12rem);
+    padding-top: 2rem;
+    font-size: 1.1em;
+}
+
+.login-container {
+    text-align: center;
+    width: 100%;
+    max-width: 550px;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+    color: #000;
+    font-weight: 600;
+}
+
+.login-container a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.login-btn:hover {
+    background: #f5f5f5;
+}
+
+.login-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-field .icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 16px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.enter-btn {
+    width: 100%;
+    background: #004B23;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.enter-btn:hover {
+    background: #006837;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+.texto {
+    margin-top: -20px;
+}
+.contato {
+    margin-top: -60px;
+    margin-left: 10px;
+}
+
+/* Em telas grandes, esconde o ícone hambúrguer */
+@media (min-width: 1261px) {
+    #toggle_menu {
+      display: none;
+    }
+  }
+  
+  /* RESPONSIVIDADE */
+  @media screen and (max-width: 1260px) {
+  
+    .navbar_links, .navbar_buttons {
+      display: none;
+    }
+  
+    #toggle_menu{
+      display: block;
+      color: var(--white);
+      font-size: 2.5rem;
+      margin-right: 2rem;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+  
+    .navbar_logo img{
+      width: 4rem;
+      margin-left: 1rem;
+      margin-right: -1rem;
+      margin-top: 1rem;
+    }
+  
+    .navbar_container{
+      padding: 8px;
+    }
+  
+    main {
+      flex-direction: column-reverse;
+      margin-top: 3rem;
+    }
+
+    .login-container {
+        margin-left: 0;
+        width: 90%;
+        padding-top: 1rem;
+    }
+
+    .login-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-container a{
+        font-size: 0.9rem;
+    }
+
+    .lateral{
+        display: none;
+    }
+  }

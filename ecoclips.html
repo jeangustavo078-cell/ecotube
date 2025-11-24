@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecotube</title>
+    <link rel="stylesheet" href="assets/CSS/ecoclips.css">
+</head>
+
+<body>
+    <!--CABEÇALHO-->
+    <header class="header">
+        <nav>
+            <div class="navbar_container">
+                <!--LOGO-->
+                <div class="navbar_logo">
+                    <img src="assets/img/logo.png" alt="Logo da Ecotube">
+                </div>
+
+                <!--BARRA DE PESQUISA-->
+
+
+                <!--BOTÕES-->
+                <div class="navbar_buttons">
+
+                    <div class="navbar_button">
+                        <button>
+                            <ion-icon name="notifications-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="navbar_button">
+                        <button>
+                            <ion-icon name="globe-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="navbar_button">
+                        <button>
+                            <a href="login.html">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+                <!--MENU HAMBURGUER-->
+                <div id="toggle_menu">
+                    <label for="menu_toggle" class="menu-btn" aria-label="botão menu">
+                      <ion-icon name="menu-outline"></ion-icon>
+                    </label>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div class="navbar_links">
+                <a href="index.html">Início</a>
+                <a href="player.html">Vídeos</a>
+                <a href="#">EcoClips</a>
+                <a href="sobre_nos.html">Sobre nós</a>
+            </div>
+        </nav>
+    </header>
+    <!--IONICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--CLIPS-->
+    <main>
+        <h2>EcoClips</h2>
+
+        <div class="clips">
+
+            <button class="button1">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
+
+
+            <div class="clip1">
+                <a href="#">
+                    <img src="assets/img/ecoclip01.jpg" alt="clip">
+                </a>
+            </div>
+
+            <section class="clip_play">
+                <div class="clip2">
+                    <video src="assets/videos/ecoclip02.mp4" controls></video>
+                </div>
+                <div class="configbuttons">
+                    <button class="like configbuttons">
+                        <ion-icon name="happy-outline"></ion-icon>
+                    </button>
+
+                    <button class="dislike configbuttons">
+                        <ion-icon name="sad-outline"></ion-icon>
+                    </button>
+
+                    <button class="chat configbuttons">
+                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                    </button>
+
+                    <button class="share configbuttons">
+                        <ion-icon name="arrow-redo-outline"></ion-icon>
+                    </button>
+
+                    <button class="more configbuttons">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </button>
+
+                </div>
+            </section>
+
+
+            <div class="clip3">
+                <a href="#">
+                    <img src="assets/img/ecoclip03.jpg" alt="clip">
+                </a>
+            </div>
+
+            <button class="button2">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

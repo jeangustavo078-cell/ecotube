@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+:root {
+    --primary-color: #004B23;
+    --second-color: #EDFFDD;
+    --third-color: #63AD22;
+    --text-dark: #071408;
+    --text-light: #3a6b38;
+    --extre-light: #f8fafc;
+    --white: #ffffff;
+    --gradient: linear-gradient(to right bottom, #ffd43b, #ff9900);
+    --background: #EDFFDD;
+    --positive: #0d8ae5;
+    --negative: #ff6b6b;
+    --ff: 'montserrat', sans-serif;
+    font-size: 100%;
+    
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+    
+}
+
+.navbar_container {
+    width: 0 auto;
+    padding: 10px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_logo img {
+    width: 5rem;
+    margin-left: 2rem;
+    margin-right: -2rem;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    color: var(--text-light);
+    width: 500px;
+}
+
+.search {
+    border: none;
+    background: var(--white);
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0.2rem;
+}
+
+.search ion-icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.navbar_links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    margin: 1rem 2rem;
+}
+
+.navbar_links a {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.2s ease;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 0.4rem 0.7rem;
+}
+
+.navbar_links a:hover {
+    color: var(--white);
+    background-color: #004b23b7;
+    border-radius: 15px;
+    padding: 0.4rem 0.7rem;
+}
+
+.navbar_button a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar_buttons {
+    display: flex;
+    gap: 1.4rem;
+    margin-right: 2rem;
+}
+
+.navbar_button button {
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.navbar_button ion-icon {
+    border-radius: 50%;
+    padding: 0.2rem;
+    transition: 0.3s;
+}
+
+.navbar_button ion-icon:hover {
+    color: var(--third-color);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    background-color: var(--primary-color);
+    height: 1000;
+}
+
+
+.clips{
+    display: flex;
+    gap: 2rem;
+}
+
+
+main h2{
+    font-family: 'Sigmar', cursive;
+    font-size: 4rem;
+    color: var(--white);
+    align-items: center;
+}
+
+.button1 {
+    display: flex;
+    background-color: var(--third-color);
+    filter: brightness(60%);
+    align-items: center;
+    justify-content: center;
+    margin-top: 22rem;
+    height: 3rem;
+    border: 1px solid black;
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button2 {
+    display: flex;
+    background-color: var(--third-color);
+    filter: brightness(60%);
+    align-items: center;
+    justify-content: center;
+    margin-top: 22rem;
+    height: 3rem;
+    border: 1px solid black;
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.clip1 img {
+    margin-top: 1rem;
+    width: 25rem;
+    height: 45rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+    filter: brightness(50%);
+}
+
+.clip2 video { 
+    margin-top: 1rem;
+    width: 30rem;
+    height: 50rem;
+    border-radius: 15px;
+    transition: 0.3s;
+    object-fit: cover;
+    aspect-ratio: 9 / 16;
+}
+
+.clip_play {
+    display: flex;
+    gap: 1rem;
+    margin-left: 3.5rem;
+}
+
+.configbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.like {
+    font-size: 1.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin-top: 15rem;
+    border: none;
+}
+
+.dislike {
+    font-size: 1.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin-top: 1rem;
+    border: none;
+}
+
+.chat {
+    font-size: 1.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin-top: 1rem;
+    border: none;
+}
+
+.share {
+    font-size: 1.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin-top: 1rem;
+    border: none;
+}
+
+.more {
+    font-size: 1.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin-top: 1rem;
+    border: none;
+}
+
+.clip3 img {
+    margin-top: 1rem;
+    width: 25rem;
+    height: 45rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+    filter: brightness(50%);
+}
+
+.clip1 img:hover {
+    filter: brightness(100%);
+}
+
+.clip3 img:hover {
+    filter: brightness(100%);
+}
+
+.like:hover {
+    background-color: var(--third-color);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.dislike:hover {
+    background-color: var(--negative);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.chat:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.share:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.more:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 752px) {
+    #toggle_menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 751px) {
+
+    .navbar_links, .navbar_buttons {
+        display: none;
+    }
+
+    #toggle_menu{
+        display: block;
+        color: var(--white);
+        font-size: 2.5rem;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+
+    main {
+        margin-top: 1rem;
+    }
+
+    main h2{
+        display: none;
+    }
+
+    .clip_play {
+        margin: 0;
+        gap: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .configbuttons {
+        transform: scale(0.9);
+        position: relative;
+        margin-left: -1.9rem;
+    }
+
+    .clip2 {
+        flex: 1 1 auto;
+        min-width: 0;
+        margin: 0;
+        aspect-ratio: 9 / 16;
+        width: 100%;
+        height: auto;
+    }
+
+    .clip2 video{
+        width: 100%;
+        aspect-ratio: 9 / 16;
+    }
+
+    .clip1, .clip3, .button1, .button2 {
+        display: none;
+    }
+}

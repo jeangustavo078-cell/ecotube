@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/CSS/login.css">
+</head>
+
+<body>
+    <!--CABEÇALHO-->
+    <header class="header">
+        <nav>
+            <div class="navbar_container">
+                <!--LOGO-->
+                <div class="navbar_logo">
+                    <img src="assets/img/logo.png" alt="Logo da Ecotube">
+                </div>
+
+                <!--BARRA DE PESQUISA-->
+
+
+                <!--BOTÕES-->
+                <div class="navbar_buttons">
+
+                    <div class="navbar_button">
+                        <button>
+                            <a href="comment.html">
+                                <ion-icon name="notifications-outline"></ion-icon>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="navbar_button">
+                        <button>
+                            <ion-icon name="globe-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="navbar_button">
+                        <button>
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!--MENU HAMBURGUER-->
+                <div id="toggle_menu">
+                    <label for="menu_toggle" class="menu-btn" aria-label="botão menu">
+                      <ion-icon name="menu-outline"></ion-icon>
+                    </label>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div class="navbar_links">
+                <a href="index.html">Início</a>
+                <a href="player.html">Vídeos</a>
+                <a href="ecoclips.html">EcoClips</a>
+                <a href="sobre_nos.html">Sobre nós</a>
+            </div>
+        </nav>
+    </header>
+    <!--IONICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Login -->
+    <section class="login-section">
+        <div class="login-container">
+            <aside class="lateral">
+                <img src="assets/img/logo.png" alt="logo" class="logo">
+                <img src="assets/img/texto.png" alt="texto" class="texto">
+                <img src="assets/img/contato.png" alt="contato" class="contato">
+            </aside>
+            <h2>BEM-VINDO DE VOLTA!</h2>
+
+            <button class="login-btn google">
+                <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google">
+                Fazer login com o Google
+            </button>
+
+            <button class="login-btn facebook">
+                <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="Facebook">
+                Fazer login com o Facebook
+            </button>
+
+            <div class="divider"><span>OU</span></div>
+
+            <div class="input-field">
+                <i class="icon">&#128100;</i>
+                <input type="text" placeholder="E-mail ou nome de usuário">
+            </div>
+
+            <div class="input-field">
+                <i class="icon">&#128274;</i>
+                <input type="password" placeholder="Senha">
+            </div>
+
+            <button class="enter-btn">ENTRAR</button>
+            
+            <a href="cadastro.html">Ainda não tem uma conta? Cadastrar-se</a>
+        </div>
+
+    </section>
+</body>
+</html>
