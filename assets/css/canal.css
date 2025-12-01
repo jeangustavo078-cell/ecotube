@@ -168,7 +168,6 @@ body {
 }
 
 .info_canal h1 {
-    
     font-size: 3rem;
     color: var(--text-dark);
 }
@@ -233,6 +232,116 @@ hr {
     color: var(--third-color);
 }
 
+<<<<<<< HEAD
+@media (min-width: 937px) {
+    #toggle_menu {
+      display: none;
+    }
+}
+  
+
+@media (max-width:937px) {
+    .navbar_links, .navbar_buttons {
+        display: none;
+    }
+    
+    #toggle_menu{
+        display: block;
+        color: var(--white);
+        font-size: 2.5rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+
+    .info_canal_container {
+        margin: 0;
+    }
+
+    hr {
+        margin: 2rem;
+    }
+
+    .foto_perfil img{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .info_canal h1{
+        font-size: 30px;
+    }
+
+    .info_canal p{
+        font-size: 12px;
+    }
+
+    .subscribe_button {
+        transform: scale(0.9);
+    }
+
+    .video img{
+        width: 15rem;
+        height: 10.5rem;
+    }
+}
+
+@media (max-width: 622px) {
+    .info_canal_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .info_canal {
+        margin: 0;
+    }
+
+    .info_canal {
+        width: 70%;
+    }
+
+    .foto_perfil img{
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .infos {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .info_canal { 
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 532px) {
+    .videos {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .video {
+        width: 80%;
+        margin: 0;
+    }
+
+    .video img {
+        width: 100%;
+        height: 16rem;
+        margin: 0;
+        border-radius: 10px;
+    }
+=======
 /*FOOTER*/
 .footer_content{
     display: flex;
@@ -278,4 +387,5 @@ hr {
     flex-direction: column;
     gap: 3rem;
     width: 15rem;
+>>>>>>> 12815bdcf0ba5fc1407c82ac3a3b2bf7f69e2825
 }

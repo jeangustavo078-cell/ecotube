@@ -466,6 +466,20 @@ body {
 
 
 @media screen and (max-width: 1245px) {
+  .navbar_container {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .navbar_logo img {
+    width: 3rem;
+    margin: 0;
+  }
+
+  #toggle_menu {
+    transform: scale(0.8);
+    margin: 0;
+  }
+
   .sidebar {
     flex: 0 0 200px;
   }
@@ -474,5 +488,73 @@ body {
     font-size: 0.85rem;
     font-weight: 500;
     color: var(--text-dark);
+  }
+
+  .video-container {
+    align-content: baseline;
+  }
+
+  .video-info {
+    display: flex;
+    align-items: center;
+    align-content: baseline;
+  }
+
+  .subscribe_button {
+    margin: 0 0 0 0.5rem;
+  }
+
+  .like_button {
+    transform: scale(0.8);
+  }
+
+  .dislike_button {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 492px) {
+  .video-details {
+    gap: 0rem;
+  }
+
+  .video-details h2 {
+    font-size: 18px;
+    margin: 1rem 0 0.4rem 0;
+  }
+
+  .video-details p {
+    font-size: 10px;
+  }
+
+  .search-box {
+    width: 40%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .video-container p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 446px) {
+
+  .player_section {
+    padding: 10px;
+  }
+
+  .canal_name {
+    display: none;
+  }
+
+  .video_subscribers {
+    display: none;
+  }
+
+  .btn-ver-mais {
+    transform: scale(0.8);
   }
 }
