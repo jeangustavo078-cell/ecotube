@@ -24,6 +24,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--background);
+  margin: 0;
+  padding: 0;
 }
 
 .navbar_container {
@@ -212,49 +214,49 @@ footer {
   width: 100%;
 }
 
-.footer_content{
+.footer_content {
   padding: 3rem;
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-around;
   margin: 4rem 0 0 0;
   color: var(--white);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   width: 100%;
 }
 
-.footer_content img{
+.footer_content img {
   width: 15rem;
   height: 15rem;
 }
 
-.footer_content h3{
+.footer_content h3 {
   font-style: italic;
 }
 
-.contatos{
+.contatos {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   width: 15rem;
 }
 
-.contatos a{
+.contatos a {
   text-decoration: none;
   color: var(--third-color);
 }
 
-.meios_contato{
+.meios_contato {
   display: flex;
 }
 
-.meios_contato img{
+.meios_contato img {
   width: 16rem;
   height: 4rem;
   cursor: pointer;
 }
 
-.sobre{
+.sobre {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -290,7 +292,7 @@ footer {
     border-radius: 15px;
     margin: 1.5rem 0 2rem 0;
   }
-  
+
   .carrossel02 {
     margin-top: 1rem;
     margin-left: 2rem;
@@ -305,24 +307,97 @@ footer {
     width: 300px;
   }
 
-  .footer_content{
+  .footer_content {
     gap: 2rem;
     margin: 1rem 2rem 4rem 2rem;
-}
+  }
 
-.footer_content img{
+  .footer_content img {
     width: 10rem;
     height: 10rem;
-}
+  }
 
-.meios_contato img{
+  .meios_contato img {
     width: 12rem;
     height: 3rem;
-}
+  }
 }
 
 @media (max-width: 760px) {
-    .search-box input {
-        width: 200px;
-    }
+  .search-box {
+    width: 30%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .videos h2 {
+    display: none;
+  }
+}
+
+@media (max-width: 718px) {
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .carrossel02 {
+    margin: 0.7rem;
+  }
+
+  .videos {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .videoplay {
+    margin: 0;
+  }
+
+  footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer_content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 1rem 4rem 1rem;
+    text-align: center;
+  }
+
+  .footer_content img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .footer_content h3 {
+    font-size: 1rem;
+  }
+
+  .meios_contato {
+    justify-content: center;
+  }
+
+  .meios_contato img {
+    width: 10rem;
+    height: 2.5rem;
+  }
+
+  .contatos,
+  .sobre {
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .contatos,
+  .sobre p {
+    font-size: 0.8rem;
+  }
 }

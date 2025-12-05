@@ -325,6 +325,7 @@ footer {
         width: 48%;
         height: auto;
     }
+    
     .footer_content{
         flex-direction: column;
         align-items: center;
